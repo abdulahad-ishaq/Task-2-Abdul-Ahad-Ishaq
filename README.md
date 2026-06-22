@@ -14,7 +14,7 @@ The source dataset has no fraud column, so IsFraud is derived from a risk score 
 - Logistic Regression: StandardScaler → SMOTE → LogisticRegression
 - Random Forest: SMOTE → RandomForestClassifier (tree splits are scale-invariant, so no scaler)
 - Tuning: GridSearchCV (5-fold stratified, roc_auc scoring) over both smote__k_neighbors and the model's own hyperparameters jointly.
-- Evaluation: Precision, Recall, ROC-AUC, confusion matrix — Accuracy is never reported.
+- Evaluation: Precision, Recall, ROC-AUC, confusion matrix, Accuracy is never reported.
 
 ## Setup
 
